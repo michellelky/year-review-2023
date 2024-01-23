@@ -35,10 +35,12 @@ function App() {
 
   return (
     <>
-      <Cover />
-      {CONTENT.map((c) => (
+      <Cover to={CONTENT[0].graphic} />
+      {CONTENT.map((c, index) => (
         <ContentSection
           key={c.title}
+          id={c.graphic}
+          to={CONTENT[index + 1]?.graphic || "end"}
           title={c.title}
           body={c.body}
           bgColor={c.bgColor}
@@ -46,7 +48,7 @@ function App() {
           renderGraphic={() => renderGraphic(c.graphic)}
         />
       ))}
-      <EndSection />
+      <EndSection id="end" />
     </>
   );
 }

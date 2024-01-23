@@ -1,9 +1,14 @@
 import Section from "../Section";
 import styles from "./Cover.module.css";
 
-export default function Cover() {
+interface Props {
+  id?: string;
+  to?: string;
+}
+
+export default function Cover({ to }: Props) {
   return (
-    <Section center>
+    <Section to={to} center>
       <div className={styles.titleWrapper}>
         <h1>2</h1>
         <h1>0</h1>

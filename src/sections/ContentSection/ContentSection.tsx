@@ -3,6 +3,8 @@ import Section from "../Section";
 import styles from "./ContentSection.module.css";
 
 interface ContentSectionProps extends PropsWithChildren {
+  id: string;
+  to?: string;
   title: string;
   body: string;
   bgColor: string;
@@ -11,6 +13,8 @@ interface ContentSectionProps extends PropsWithChildren {
 }
 
 export default function ContentSection({
+  id,
+  to,
   title,
   body,
   bgColor,
@@ -51,7 +55,11 @@ export default function ContentSection({
   };
 
   return (
-    <Section style={{ backgroundColor: `var(--color-${bgColor})` }}>
+    <Section
+      id={id}
+      to={to}
+      style={{ backgroundColor: `var(--color-${bgColor})` }}
+    >
       <div className={styles.graphicsContainer}>{renderGraphic()}</div>
 
       <div className={styles.contentContainer}>

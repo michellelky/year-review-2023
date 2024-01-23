@@ -1,43 +1,37 @@
 import { CSSProperties, PropsWithChildren } from "react";
+import { Link } from "react-scroll";
 import styles from "./Section.module.css";
 import arrowIcon from "../../assets/arrow-down-circle.svg";
 
 interface SectionProps extends PropsWithChildren {
+  id?: string;
+  to?: string;
   className?: string;
   style?: CSSProperties;
   center?: boolean;
-  hideScroll?: boolean;
 }
 
 export default function Section({
   children,
+  id,
+  to,
   className = "",
   style,
   center = false,
-  hideScroll = false,
   ...props
 }: SectionProps) {
-  const scrollDown = () => {
-    if (window) {
-      window.scrollBy({ left: 0, top: window.innerHeight, behavior: "smooth" });
-    }
-  };
-
   return (
     <section
+      id={id}
       className={`${className} ${center ? styles.center : ""}`}
       style={style}
       {...props}
     >
       {children}
-      {!hideScroll && (
-        <button
-          className={styles.arrowBtn}
-          onClick={scrollDown}
-          aria-label="scroll"
-        >
+      {!!to && (
+        <Link className={styles.arrowBtn} to={to} duration={1000} smooth>
           <img src={arrowIcon} className={styles.arrow} alt="arrow down" />
-        </button>
+        </Link>
       )}
     </section>
   );

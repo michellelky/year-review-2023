@@ -2,15 +2,16 @@ import { motion, useDragControls } from "framer-motion";
 import Section from "../Section";
 import styles from "./EndSection.module.css";
 
-export default function EndSection() {
+interface Props {
+  id?: string;
+  to?: string;
+}
+
+export default function EndSection({ id }: Props) {
   const controls = useDragControls();
 
   return (
-    <Section
-      style={{ backgroundColor: `var(--color-cream)` }}
-      center
-      hideScroll
-    >
+    <Section id={id} style={{ backgroundColor: `var(--color-cream)` }} center>
       <p className={styles.endSubtitle}>Here’s to another amazing year.</p>
 
       <motion.h1
