@@ -39,14 +39,14 @@ export default function Swim() {
     const transform = useTransform(scrollYProgress, [0, 1], outputRange);
     return useSpring(transform, {
       stiffness: 90,
-      damping: 50,
+      damping: 40,
     });
   };
 
   return (
     <div id="swimWrapper" ref={ref}>
       <motion.img
-        src="/src/assets/ring-buoy-1F6DF.svg"
+        src="/images/ring-buoy-1F6DF.svg"
         id="buoy"
         style={{
           translateX: useScrollTransform([180, -100]),

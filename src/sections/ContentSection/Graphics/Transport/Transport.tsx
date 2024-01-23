@@ -13,7 +13,7 @@ export default function Transport() {
       <div id="busShaker">
         <img
           id="bus"
-          src="/src/assets/bus-1F68C.svg"
+          src="/images/bus-1F68C.svg"
           style={{ animationPlayState: isInView ? "running" : "paused" }}
         />
       </div>
