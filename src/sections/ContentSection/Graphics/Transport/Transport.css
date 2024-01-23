@@ -1,0 +1,35 @@
+#travelWrapper {
+  position: relative;
+  height: 100%;
+  padding-top: 10%;
+}
+
+#bus {
+  width: 220px;
+  animation: 7s linear drive infinite;
+}
+#busShaker {
+  position: absolute;
+  bottom: 0;
+  animation: 400ms ease-in-out bounce infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes drive {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}

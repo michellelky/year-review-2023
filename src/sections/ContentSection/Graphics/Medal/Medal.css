@@ -1,0 +1,24 @@
+#partyWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#partyWrapper img {
+  width: 200px;
+}
+
+.confetti {
+  position: absolute;
+  /* start from top */
+  top: -10%;
+}
+
+@keyframes rain {
+  100% {
+    top: 150%;
+    opacity: 0;
+  }
+}

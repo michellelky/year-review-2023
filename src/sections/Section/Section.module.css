@@ -1,0 +1,28 @@
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-mist);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+}
+.arrowBtn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

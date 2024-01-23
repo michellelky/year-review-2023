@@ -1,0 +1,9 @@
+#waveBlock {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#buoy {
+  width: 180px;
+}

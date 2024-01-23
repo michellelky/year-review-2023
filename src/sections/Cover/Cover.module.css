@@ -1,0 +1,46 @@
+.titleWrapper {
+  display: flex;
+}
+
+.subtitle {
+  color: var(--color-gray);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.titleWrapper h1 {
+  font-family: "Titan One", sans-serif;
+  font-size: 7rem;
+  color: var(--color-gem);
+  animation: 4s ease-in-out float;
+  animation-iteration-count: infinite;
+}
+
+.titleWrapper h1:nth-child(1) {
+  transform: rotate(-10deg) translateX(-4px);
+  animation-delay: 400ms;
+}
+.titleWrapper h1:nth-child(2) {
+  transform: translateY(4px);
+}
+.titleWrapper h1:nth-child(3) {
+  transform: rotate(10deg) translateX(4px);
+  animation-delay: 600ms;
+}
+.titleWrapper h1:nth-child(4) {
+  transform: rotate(-6deg) translateX(6px);
+  animation-delay: 300ms;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,27 @@
+.graphicsContainer {
+  height: 60%;
+  width: 100%;
+}
+
+.contentContainer {
+  display: block;
+  padding: 32px;
+  z-index: 10;
+}
+
+.header {
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  font-weight: bold;
+}
+
+.highlight {
+  font-size: 2rem;
+  color: var(--color-mud);
+  line-height: 2.5rem;
+  margin-right: 4px;
+}
+
+.body {
+  margin-top: 1.25rem;
+}

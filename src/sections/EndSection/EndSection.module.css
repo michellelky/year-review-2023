@@ -1,0 +1,11 @@
+.endSubtitle {
+  color: var(--color-gray);
+  font-weight: bold;
+}
+
+.endTitle {
+  font-family: "Titan One", sans-serif;
+  font-size: 4rem;
+  color: var(--color-fire);
+  margin-top: 2rem;
+}

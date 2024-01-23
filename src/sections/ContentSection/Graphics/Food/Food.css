@@ -1,0 +1,28 @@
+#foodWrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50%;
+  margin-top: 60px;
+}
+
+.slideRow {
+  display: flex;
+  flex-direction: row;
+  animation: scroll 10s linear infinite;
+}
+.slideRow img {
+  width: 120px;
+}
+
+.secondSlide {
+  animation-delay: 10s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
