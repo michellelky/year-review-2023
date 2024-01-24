@@ -13,7 +13,7 @@ export default function Flags() {
   return (
     <div ref={ref} id="flagWrapper">
       <motion.img
-        src="/images/france.png"
+        src="images/france.png"
         style={{
           translateX: useScrollTransform([-160, -40]),
           translateY: useScrollTransform([-90, -20]),
@@ -22,14 +22,14 @@ export default function Flags() {
         }}
       />
       <motion.img
-        src="/images/italy.png"
+        src="images/italy.png"
         style={{
           rotate: useScrollTransform([10, 0]),
           scale: useScrollTransform([1.4, 1]),
         }}
       />
       <motion.img
-        src="/images/turkey.png"
+        src="images/turkey.png"
         style={{
           translateX: useScrollTransform([-90, -30]),
           translateY: useScrollTransform([40, 10]),
@@ -38,7 +38,7 @@ export default function Flags() {
         }}
       />
       <motion.img
-        src="/images/spain.png"
+        src="images/spain.png"
         style={{
           translateX: useScrollTransform([0, 10]),
           translateY: useScrollTransform([-120, -50]),
@@ -47,7 +47,7 @@ export default function Flags() {
         }}
       />
       <motion.img
-        src="/images/greece.png"
+        src="images/greece.png"
         style={{
           translateX: useScrollTransform([60, 30]),
           translateY: useScrollTransform([-70, -10]),
@@ -56,7 +56,7 @@ export default function Flags() {
         }}
       />
       <motion.img
-        src="/images/germany.png"
+        src="images/germany.png"
         style={{
           translateX: useScrollTransform([-120, -30]),
           translateY: useScrollTransform([-180, -60]),

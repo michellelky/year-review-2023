@@ -54,7 +54,7 @@ export default function Medal() {
   return (
     <div id="partyWrapper">
       <motion.img
-        src="/images/sports-medal-1F3C5.svg"
+        src="images/sports-medal-1F3C5.svg"
         variants={zoomVariants}
         initial="offscreen"
         whileInView="onscreen"

@@ -46,7 +46,7 @@ export default function Swim() {
   return (
     <div id="swimWrapper" ref={ref}>
       <motion.img
-        src="/images/ring-buoy-1F6DF.svg"
+        src="images/ring-buoy-1F6DF.svg"
         id="buoy"
         style={{
           translateX: useScrollTransform([180, -100]),
