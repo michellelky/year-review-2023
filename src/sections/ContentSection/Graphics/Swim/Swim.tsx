@@ -28,7 +28,7 @@ function Wave({ top }: { top: MotionValue<number> }) {
 export default function Swim() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const translateY = useTransform(scrollYProgress, [0, 1], [500, 100]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [400, 100]);
   const top = useSpring(translateY, {
     stiffness: 100,
     damping: 30,
@@ -50,7 +50,7 @@ export default function Swim() {
         id="buoy"
         style={{
           translateX: useScrollTransform([180, -100]),
-          translateY: useScrollTransform([460, -200]),
+          translateY: useScrollTransform([360, -200]),
           rotate: useScrollTransform([360, 0]),
         }}
       />

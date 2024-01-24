@@ -1,5 +1,5 @@
 section {
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   background-color: var(--color-mist);
   display: flex;
@@ -14,14 +14,14 @@ section {
 }
 
 .arrow {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .arrowBtn {
-  width: 30px;
+  width: 32px;
   height: 30px;
   position: absolute;
-  bottom: 16px;
+  bottom: 1.5rem;
   left: 0;
   right: 0;
   margin: 0 auto;
