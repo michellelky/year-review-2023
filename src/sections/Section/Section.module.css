@@ -1,7 +1,7 @@
 section {
   height: 100dvh;
   width: 100%;
-  background-color: var(--color-mist);
+  background-color: var(--color-water);
   display: flex;
   flex-direction: column;
   overflow: hidden;
